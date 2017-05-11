@@ -16,6 +16,7 @@ import javax.naming.ldap.LdapContext;
 @Component(
 	immediate = true,
 	property = {
+			"my.property=ciccio"
 		// TODO enter required service properties
 	},
 	service = LDAPUserImporter.class
