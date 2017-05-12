@@ -30,6 +30,7 @@ public class BootcampCreateAccountMVCActionCommand extends BaseMVCActionCommand 
 
 	@Override
 	protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
-		_log.info("Hi there! No account will be created! :)");
+		String twitteraccount = actionRequest.getParameter("twitteraccount");
+		_log.info("Hi there! We got the twitter account " +twitteraccount+". But no account will be created! :)");
 	}
 }
