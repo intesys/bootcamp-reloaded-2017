@@ -197,6 +197,7 @@ birthdayCalendar.set(Calendar.YEAR, 1970);
 			</c:if>
 
             <div class="custom-field">
+                <liferay-ui:message key="quote-messagge" />
                <liferay-ui:custom-attribute
                   className="<%= User.class.getName() %>"
                   classPK="<%= 0 %>"
