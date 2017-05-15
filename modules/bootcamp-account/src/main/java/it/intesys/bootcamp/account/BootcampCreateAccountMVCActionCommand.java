@@ -35,11 +35,7 @@ public class BootcampCreateAccountMVCActionCommand extends BaseMVCActionCommand 
 	@Override
 	protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
 		String userQuote = actionRequest.getParameter("ExpandoAttribute--" + "quote" + "--");
-		if(userQuote == null || userQuote.length() == 0){
-			//the quote hasn't been inserted with a ui:custom-attribute, therefore we look for the simple "quote" attribute
-			// FIXME: 12/05/2017 this way no expando attribute will be set into the user properties
-			userQuote = actionRequest.getParameter("quote");
-		}
+
 		if(userQuote == null || userQuote.length() == 0){
 			SessionErrors.add(actionRequest,"missing-quote");
 			return;

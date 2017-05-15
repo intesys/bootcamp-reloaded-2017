@@ -196,12 +196,15 @@ birthdayCalendar.set(Calendar.YEAR, 1970);
 				<liferay-ui:captcha url="<%= captchaURL %>" />
 			</c:if>
 
-           <aui:input name="ExpandoAttributeName--quote--" type="hidden" value="quote" />
-
-           <aui:input label="Your Quote"
-           name="ExpandoAttribute--quote--"
-           size="40"
-           type="text" value="" />
+            <div class="custom-field">
+               <liferay-ui:custom-attribute
+                  className="<%= User.class.getName() %>"
+                  classPK="<%= 0 %>"
+                  editable="<%= true %>"
+                  label="<%= true %>"
+                  name="quote"
+                  />
+              </div>
 
 		</aui:col>
 	</aui:fieldset>
