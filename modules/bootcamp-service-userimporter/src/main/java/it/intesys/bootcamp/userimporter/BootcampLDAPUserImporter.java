@@ -15,6 +15,9 @@ import javax.naming.ldap.LdapContext;
  */
 @Component(
 	immediate = true,
+	property = {
+			"service.ranking:Integer=100"
+	},
 	service = LDAPUserImporter.class
 )
 public class BootcampLDAPUserImporter implements LDAPUserImporter {
