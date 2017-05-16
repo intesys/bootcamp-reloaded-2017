@@ -1,0 +1,3 @@
+Bundle-Name: bootcamp-writer-service
+Bundle-SymbolicName: it.intesys.bootcamp.writers.impl
+Bundle-Version: 1.0.0

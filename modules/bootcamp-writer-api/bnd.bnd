@@ -1,0 +1,4 @@
+Bundle-Name: bootcamp-writer-api
+Bundle-SymbolicName: it.intesys.bootcamp.writers
+Bundle-Version: 1.0.0
+Export-Package: it.intesys.bootcamp.writers.api
