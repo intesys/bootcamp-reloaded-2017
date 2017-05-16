@@ -45,9 +45,6 @@ public class BootcampCreateAccountMVCActionCommand extends BaseMVCActionCommand 
 		originalMVCCommand.processAction(actionRequest, actionResponse);
 	}
 
-	/**
-	 * https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/overriding-mvc-commands
-	 */
 	@Reference(target = "(component.name=com.liferay.login.web.internal.portlet.action.CreateAccountMVCActionCommand)")
 	public void setOriginalMVCCommand(MVCActionCommand originalMVCCommand) {
 		this.originalMVCCommand = originalMVCCommand;
