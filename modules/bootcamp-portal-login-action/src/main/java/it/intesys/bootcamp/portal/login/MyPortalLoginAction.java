@@ -35,12 +35,12 @@ public class MyPortalLoginAction extends BaseStrutsAction {
     private Log _log = LogFactoryUtil.getLog(MyPortalLoginAction.class);
 
 	public String execute(
-			StrutsAction originalStrutsAction, HttpServletRequest request,
-			HttpServletResponse response)
-			throws Exception {
+                StrutsAction originalStrutsAction, HttpServletRequest request,
+                HttpServletResponse response)
+                throws Exception {
 
-		_log.info("This is my 'portal' login action :)");
-		return originalStrutsAction.execute(request, response);
+            _log.info("This is my 'portal' login action :)");
+            return originalStrutsAction.execute(request, response);
 	}
 
 }
